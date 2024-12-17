@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Módulos</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <h1 class="sitename">Módulos</h1><span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Módulos</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="modulos.html#inventario"><span>Inventario</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="modulos.html#productos">Productos</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="modulos.html#empleados"><span>Empleados</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#emp">Empleados</a></li>
+                  <li><a href="#dep">Departamentos</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#compra"><span>Compra</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li class="dropdown" id="dropdownS"><a href="#pedido"><span>Pedidos</span> <i
+                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#presupuesto">Solicitudes de presupuesto</a></li>
+                      <li><a href="#pedido">Pedidos de compra</a></li>
+                      <li><a href="#compra">Proveedores</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#productos">Productos</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#ptventa"><span>Punto de venta</span><i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#ptventaProd">Productos</a></li>
+                  <li><a href="#ptventaTab">Tablero</a></li>
+                </ul>
+              </li>
+              <li><a href="#ajustes">Ajustes</a></li>
+            </ul>
+          </li>
+          <li><a href="bootstrap.html">Bootstrap</a></li>
+          <li><a href="blog.html">Daily</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <img src="./assets/img/Logo.png" height="100px" width="100px" />
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/odoo-bg.png" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 data-aos="fade-up" data-aos-delay="100">Odoo 18</h2>
+            <a href="https://www.odoo.com/es_ES" target="_blank" class="btn btn-lg btn-outline-light" data-aos="fade-up"
+              data-aos-delay="200">Visita Odoo</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--ICONOS MÓDULOS-->
+    <section class="bg-200 o_colored_level pt-4 pt-md-6 pb-7" data-oe-shape-data="{'shape':'illustration/doodle/03'}">
+      <div class="o_we_shape o_illustration_doodle_03" style="left: -0.2px; right: -0.2px;"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-xxl-8 text-center">
+            <div class="row mt-5 mt-md-6">
+              <a class="x_wd_app_entry col-4 col-sm-3 col-lg-2 text-center mb-3 p-0 offset-lg-1">
+                <figure>
+                  <img width="80px" class="img-thumbnail rounded-1 mb-3"
+                    src="//download.odoocdn.com/icons/stock/static/description/icon.svg" alt="Odoo Inventario icon"
+                    loading="lazy">
+                  <figcaption class="text-truncate small text-o-color-5">Inventario</figcaption>
+                </figure>
+              </a>
+              <a class="x_wd_app_entry col-4 col-sm-3 col-lg-2 text-center mb-3 p-0">
+                <figure>
+                  <img width="80px" class="img-thumbnail rounded-1 mb-3"
+                    src="//download.odoocdn.com/icons/purchase/static/description/icon.svg" alt="Odoo Compra icon"
+                    loading="lazy">
+                  <figcaption class="text-truncate small text-o-color-5">Compra</figcaption>
+                </figure>
+              </a>
+              <a class="x_wd_app_entry col-4 col-sm-3 col-lg-2 text-center mb-3 p-0">
+                <figure>
+                  <img width="80px" class="img-thumbnail rounded-1 mb-3"
+                    src="//download.odoocdn.com/icons/hr/static/description/icon.svg" alt="Odoo Inventario icon"
+                    loading="lazy">
+                  <figcaption class="text-truncate small text-o-color-5">Empleados</figcaption>
+                </figure>
+              </a>
+              <a class="x_wd_app_entry col-4 col-sm-3 col-lg-2 text-center mb-3 p-0">
+                <figure>
+                  <img width="80px" class="img-thumbnail rounded-1 mb-3"
+                    src="assets/img/modulos/puntodeventa/puntoventa.png" alt="Odoo Inventario icon" loading="lazy">
+                  <figcaption class="text-truncate small text-o-color-5">Punto de venta</figcaption>
+                </figure>
+              </a>
+              <a class="x_wd_app_entry col-4 col-sm-3 col-lg-2 text-center mb-3 p-0">
+                <figure>
+                  <img width="80px" class="img-thumbnail rounded-1 mb-3"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAekSURBVHgB7ZzbbxR1FMfPmZ1uW0Qtmhgfp4qXGB/A64uRxQgID1DQNx/Y6gP4QouPBmGL8mqLL+CL3foHQA1GuSgUE2OMhkBCohJNNyQoEDU14bLdyxzP2ba4tDDtzM7lDPw+yXSX3emQ/r5zfp/f/OYCYDAYDAaDwWAwGAzxgpBS9vV8kEMLNgNZOQBy3t56Uj4+zX9SCeswYq87OgopJHWBSBAW4iABLGv+fDqQG/AfNg6Wtd1edeRzSBE2pIR9PQUH0R7mtzlawPq8Tje47mjt6Kpipp4ZwLWHS5AC1FfIcE+hq2LZfURQ8FpvdoXMwcIhu2bt1R6MBYrZ//qevjLa4/OFsSBc6q9b9eO1I6s3g2JUVsjtPOHFvBXShGa/qHKIX08ERbNfVFTIQj3hhZ8KmYMivyTukFA9ERRFfkmsQoJ4wouWKqSJpP0Su0Pi8kRQkvZLbBUShie8CKtC5hCzX2JxiApPBCVmv0RaIWF7wovIKqSJOPwSiUO0eyIocfgl1AqJ2hNexFEhc4jAL6E5JNWeCEoEfmm5QuL0hBeJVEgTYfmlpQr5ZNOHg4h4IukwNCB+IfZL9djqj6AFAgeyf9OeYe6e+sFwMy5tZ+l/CgEJFAhXxi4gyoPhlvCOmi8fXhNoZ/UdiAxpXVMZ84EZdHfSwVwX+CRAhVg5Fpjv/+guZEllke17x/UdCKKl+hSoJnj0+TL4xHcgZkTlA/LfVv4rxHRXfojDIcnCFToBSEUit7dOuLydaku2HtyBbWuOoX2tuoQQlpMLveTSCK83ASkjNRfKcRQlIGuoA6ojvQcLt2xo3Dgmn5+eXoqVr1bJx3ne7XZxZTuQAtQHIhVhEQxsGX1/CHySXXtMXoqVL18t8nb60QY+fkLVXa7yLkuqorZ8y+gO32E0k133NdTRHqrV7Wc4mBIoRm0g3MWcJqqvfGe0UIIQ6Fx7WF7G627mFZjq0lSiNBAquVTbGFYYM8yEUnMzm7RWirpAxBlhVsZsbqoUhaMwdYGIwKMKYwYJJUO1carBblCGskCo1KrAF4qIHjI4pK3rUhUIUqYAMeISH14SfQyKUBMIj6omtoy+NwIx0t5ek6WoySVqAiGk2G/SxJVjUCnbE24d1NwnoqdC3MwYJAByefCS7BUSTSjqsugMJIHbWNQcKKqZy2qDagkSoG1RVV5KtUobaEBNhfSOFhIRq3iEwzBS1wIpu/hYTSByXTAkwVgO7GxVzZS8mkCq0OZAAlSvtcnigBLUBFKHejIXT1iNRc2FG3qGvRau4G4LYsfiEbdFK0AJegIh7IGYr2ihEzn5CYiwAZSgZ+qEw6iAnYcYqZb52MPFvKbz7KqGvTyf1VfOPwFxQG8uBbhwTbqrnaAINYE8bF+EN+476PDb/ut5B6KECjmYbM+g+/1ffe6hPxwavwJaSDwQCeK1xUd4OQqLrSsik138cXdUoUgY5dJFIBe7+YTIIFytgfvD3+AevwTE75MmsUCk8V9a9F0jiIftS81fdSFmj0MEocyEIdtGdL+56bvLZXAPXWiEk2QwsQeSxQos6zgD6+/9ApZmf7/dao6FbQcgxFCaw7CwLtt2brked18SDJ39N5FgYg3kqfaf2RMHGoFIMF7wYHTZTKW0KnoR+OT5P+UG10e4Mo7Ltuf7HffsxFQ3FrNfYpl+F0+80PkTPJD5B3zicCinOJ3d5d7Hh3jvoezwuQX9IhX4R8mBMk/sT1p8pIHQx2GInxY+xJ32C3C1WE/fD9i9GKIm0kAkgBc6f5ztCL90sejlztZtvAxwMCOIJAeSJFO1PBMFWCw1ViTu3nhOjKdhACrnCdugJo3fw4Hu5HUdCMp0MHh5ElCCuSe6ZotkyzOekC4qRBw+uSeP6xjkRc6/y2lXOctY4pCmzmdQRQJwoHFTEa6oYHZDmPezSPcli1RKVMGEukUJQkKQZT5HtEAXEeZJbjPgnmgSsje+mMSp9yKLKM9zNILhUZk1HUyY+A5ELvW81V4nIyapisaxxN2AdGMsfuBwPPzi+0yk70Bw6srx3My/RdgSRIueSC/N4n/xQcCHOv7/Dsn3xRP+K4ToJCLmZg7s7togZiPB8DC5yS887LCK4BPfgZShPvR8xy/bnus4tQQMc7gh/kcXT2Sffehb8EmgpwGV80v7+YzSIBhuB3ckMNBZPDcAPgn8eKbrvY8Po4x0DLORMEY4jF4IQOCpk87hc70ukdw6cCc9xa9V5GB1b9AwhJYfYHY1/2hPBjNyJO2Esb2UQgh0mnfQdzuLv41BC4TWgNfzj+V59CVn37rh7kF6hwmOY6Cj+OteCIFQ9+jr+Scdgnofz+X1wZ1fLQ1xd0BlL8+lhXYpaiSNJsHwBPYuntnYDHdeMOKJMYLqW53FUglCJtLGusP8EponvIilkVLul9A94UVse21K/RKJJ7yIvWFS4pdIPeFFYg2i1C+xeMKLxBtCiV9i9YQXKvbMhP0Suye8UNWHx+yXxDzhhUqpRuyXxD3hherhZ8h+UeMJL9QfD4TkF1We8CI10xkB/aLSE16kbn5pgX5R7QkvUjvh1/AL4Hpuewdw+uJpghIHMeYCfZa2IAwGg8FgMBgMBoMhKf4De32ommx0ch4AAAAASUVORK5CYII="
+                    alt="Odoo Inventario icon" loading="lazy">
+                  <figcaption class="text-truncate small text-o-color-5">Ajustes</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faq Section -->
+    <section id="modulos" class="faq section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Diferentes módulos </span><strong>de Odoo</strong></h3>
+              <p>
+                En esta sección se presentan los diferentes módulos que se pueden encontrar en Odoo, los cuales permiten
+                llevar un control de la empresa de manera eficiente.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>Inventario</span></h3>
+                <div class="faq-content">
+                  <p>Este módulo permite llevar un control de los productos que se encuentran en la empresa, permitiendo
+                    llevar un control de las existencias, los productos que se encuentran en stock, los productos que se
+                    encuentran en pedidos, entre otros.</p>
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>Empleados</span></h3>
+                <div class="faq-content">
+                  <p>
+                    Este módulo permite llevar un control de los empleados que se encuentran en la empresa, permitiendo
+                    llevar un control de los empleados activos, los empleados inactivos, los departamentos a los que
+                    pertenecen, entre otros.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>Compra</span></h3>
+                <div class="faq-content">
+                  <p>
+                    Este módulo permite llevar un control de las compras que se realizan en la empresa, permitiendo
+                    llevar un control de las solicitudes de presupuesto, los pedidos de compra, los proveedores, entre
+                    otros.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Punto de venta</span></h3>
+                <div class="faq-content">
+                  <p>
+                    Módulo cuyo fin es gestionar ventas en negocios físicos, como tiendas,
+                    restaurantes o cafeterías. Su objetivo es facilitar y optimizar las operaciones de venta directa
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>Ajustes</span></h3>
+                <div class="faq-content">
+                  <p>
+                    En este módulo se puede configurar el diseño de los documentos, permitiendo ajustar el formato de
+                    los mismos según las necesidades de la empresa.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Features Section -->
+    <section id="inventario" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Inventario</h2>
+        <p>Paso a paso para crear Productos </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+            <img src="assets/img/modulos/inventario/Inventario1.png" alt="" style="object-fit: contain;">
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+            <h3>Primer Paso</h3>
+            <p>Creamos categorías para asignarselas a nuestros productos.</p>
+            <br />
+            <ul>
+              <li><i class="bi bi-arrow-right"></i><span>Entramos en el módulo de inventario.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Vamos a configuración, Productos, Categorías de
+                  producto.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Le damos un nombre y guardamos.</span></li>
+              <br />
+              <li><i class="bi bi-gear"></i><span>Si creamos una subcategoría, le asignamos una categoría padre.</span>
+              </li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+            <img src="assets/img/modulos/inventario/Inventario2.png" alt="" style="object-fit: contain;">
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+            <h3>Segundo Paso</h3>
+            <p>Creamos un producto.</p>
+            <br />
+            <ul>
+              <li><i class="bi bi-arrow-right"></i><span>Entramos en el módulo de inventario.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Vamos a Productos, Productos y le damos a Nuevo.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Le damos un nombre, un precio y una categoría.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Por último, actualizamos la cantidad con el número de stock
+                  para la venta.</span></li>
+              <br />
+              <li><i class="bi bi-gear"></i><span>También podemos crear servicios como productos seleccionando la opción
+                  de servicio en tipo de producto.</span>
+              </li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Portfolio Section -->
+    <section id="productos" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Productos</h2>
+        <p>Portátiles para todas las necesidades</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-app">MSI</li>
+            <li data-filter=".filter-product">ASUS</li>
+            <li data-filter=".filter-branding">LENOVO</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/modulos/productos/msi1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>MSI Stealth 16 AI Studio A1VHG-036ES</h4>
+                <p>Una combinación de apariencia nítida y excelente rendimiento.</p>
+                <a href="assets/img/modulos/productos/msi1.png" title="MSI Stealth 16 AI Studio A1VHG-036ES"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/modulos/productos/asus1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>ASUS ROG Strix G18 GL814JI-N6124X</h4>
+                <p>Obtén más fotogramas y gana más partidas con el nuevo Strix G18.</p>
+                <a href="assets/img/modulos/productos/asus1.png" title="ASUS ROG Strix G18 GL814JI-N6124X"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/modulos/productos/lenovo1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Lenovo IdeaPad Slim 3 15IAH8</h4>
+                <p>Diseñada para ser liviana y delgada</p>
+                <a href="assets/img/modulos/productos/lenovo1.png" title="Lenovo IdeaPad Slim 3 15IAH8"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/modulos/productos/msi2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>MSI GE76 Raider 10UH-061ES</h4>
+                <p>Prepárate para sentir todo el poder del juego con el potente ordenador portátil.</p>
+                <a href="assets/img/modulos/productos/msi2.png" title="MSI GE76 Raider 10UH-061ES"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/modulos/productos/asus2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>ASUS TUF Gaming A16 Advantage Edition 2023 FA617NS-N3020</h4>
+                <p>Haz streaming y maneja la multitarea con facilidad gracias a la última CPU AMD Ryzen™ 9.</p>
+                <a href="assets/img/modulos/productos/asus2.png"
+                  title="ASUS TUF Gaming A16 Advantage Edition 2023 FA617NS-N3020" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/modulos/productos/msi3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>MSI Katana A17 AI B8VF-876XES</h4>
+                <p>Despierta tu poder interior y hereda la voluntad del Dragón.</p>
+                <a href="assets/img/modulos/productos/msi3.png" title="MSI Katana A17 AI B8VF-876XES"
+                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Recent Posts Section -->
+    <section id="empleados" class="recent-posts section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" id="emp">
+        <h2>Empleados</h2>
+        <p class="post-category">En este módulo podremos crear empleados y departamentos para después asignarlos a un
+          empleado.</p>
+        <br />
+        <p>Creación de Empleados</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/modulos/empleados/emp1.png" alt="" height="300px">
+              </div>
+              <h2 class="title">
+                Crear empleados
+              </h2>
+              <p class="post-category">Para comenzar a crear un empleado, lo haremos desde la pestaña empleado,
+                a continuación, clicamos en el botón 'Nuevo' y rellenamos toda la información que necesitemos del
+                empleado.</p>
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/modulos/empleados/emp2.png" height="300px" width="400px" alt="">
+              </div>
+              <h2 class="title">
+                Empleado creado
+              </h2>
+              <p class="post-category">Resultado de como quedaria un empleado ya creado.</p>
+              </p>
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/modulos/empleados/emp3.png" height="300px" width="500px" alt="">
+              </div>
+              <h2 class="title">
+                Vista organigrama
+              </h2>
+              <p class="post-category">En nuestra pestaña empleados dispondremos de una sección organigrama que nos
+                mostrará nuestros empleados
+                creados en forma de árbol.
+              </p>
+            </article>
+          </div><!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+      </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" id="dep">
+        <br />
+        <p>Creación de Departamentos</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/modulos/departamentos/dep1.png" height="300px" width="700px" alt="">
+              </div>
+              <h2 class="title">
+                Creación de Departamentos
+              </h2>
+              <p class="post-category">Para comenzar a crear un departamento, lo haremos desde la pestaña departamentos,
+                a continuación, clicamos en el botón 'Nuevo' y rellenamos toda la información que nos pida del
+                departamento.</p>
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/modulos/departamentos/dep2.png" height="300px" width="700px" alt="">
+              </div>
+              <h2 class="title">
+                Departamento creado
+              </h2>
+              <p class="post-category">
+                Resultado de como quedaria un departamento ya creado.
+              </p>
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/modulos/departamentos/dep3.png" height="300px" width="400px" alt="">
+              </div>
+              <h2 class="title">
+                Vista de departamentos
+              </h2>
+              <p class="post-category">
+                La podremos visualizar de varias maneras, en la imagen se presenta en forma de árbol.
+              </p>
+            </article>
+          </div><!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+      </div>
+    </section><!-- /Recent Posts Section -->
+
+
+    <!-- MÓDULO COMPRA -->
+
+    <section id="compra" class="testimonials section light-background">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="container section-title" data-aos="fade-up" id="emp">
+            <h2>Compra</h2>
+          </div>
+          <!--Proveedores-->
+          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+            <div class="section-title" style="text-align: start;">
+              <h2>Proveedores</h2>
+              <p style="text-align: justify;">
+                Gestiona de manera eficiente tus proveedores con Odoo. Organiza contactos, realiza seguimientos de
+                pedidos y controla el inventario, todo en una sola plataforma, para mejorar las relaciones comerciales
+                y
+                optimizar tus procesos de compra.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 4000
+                      },
+                      "slidesPerView": "auto",
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                    }
+                  </script>
+              <div class="swiper-wrapper">
+                <!--AMAZON-->
+                <div class="swiper-slide" role="group" aria-label="1 / 6" data-swiper-slide-index="0">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/modulos/proveedores/amazon2.jpg" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>Amazon</h3>
+                        <h4>www.amazon.es</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Amazon.com, Inc. es una corporación estadounidense de comercio electrónico y servicios de
+                      computación en la nube a todos los niveles con sede en la ciudad de Seattle, Washington. Su lema
+                      es: «De la A a la Z». Es una de las primeras grandes compañías en vender bienes a través de
+                      Internet.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+                <!--CARREFOUR-->
+                <div class="swiper-slide" role="group" aria-label="2 / 6" data-swiper-slide-index="1">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/modulos/proveedores/carrefour.jpg" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>Carrefour</h3>
+                        <h4>www.carrefour.es</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <span>Carrefour es una cadena multinacional de distribución de origen francés. Es considerado el
+                        primer grupo europeo, a poca distancia en ingresos netos de la compañía alemana Schwarz
+                        Gruppe,
+                        y el tercero del sector a nivel mundial.</span>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+                <!--CEX-->
+                <div class="swiper-slide" role="group" aria-label="3 / 6" data-swiper-slide-index="2">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/modulos/proveedores/cex.png" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Cex</h3>
+                        <h4>es.webuy.com</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <span>CeX Ltd. es una cadena de artículos de segunda mano con sede en el Reino Unido que se
+                        especializa en tecnología, informática y videojuegos.</span>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+                <!--CORTEING-->
+                <div class="swiper-slide" role="group" aria-label="4 / 6" data-swiper-slide-index="3">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/modulos/proveedores/corteingles.png" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>El Corte Inglés</h3>
+                        <h4>www.elcorteingles.es</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      El Corte Inglés es un grupo de distribución mundial con sede en España, compuesto por empresas
+                      de
+                      distintos formatos, siendo el principal el de grandes almacenes, seguido por el de la venta en
+                      internet.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <!--MEDIAMARK-->
+                <div class="swiper-slide" role="group" aria-label="5 / 6" data-swiper-slide-index="4">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/modulos/proveedores/mediamarkt.png" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>MediaMarkt España</h3>
+                        <h4>www.mediamarkt.es/es</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      MediaMarkt es una cadena de establecimientos multinacional alemana dedicada a la venta de
+                      productos de electrónica de consumo con más de 1000 tiendas en Europa.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+                <!--PCCOMP-->
+                <div class="swiper-slide" role="group" aria-label="6 / 6" data-swiper-slide-index="5">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/modulos/proveedores/pccomponentes.png" class="testimonial-img flex-shrink-0"
+                        alt="">
+                      <div>
+                        <h3>Pc Componentes</h3>
+                        <h4>www.pccomponentes.com</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      PcComponentes es un comercio electrónico español de tecnología, especializado en productos
+                      informáticos, electrónicos y electrodomésticos, propiedad de la sociedad PcComponentes y
+                      Multimedia SLU.
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <!--<div class="swiper-pagination"></div>-->
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+        </div>
+        <!--/Proveedores-->
+
+        <section class="features section">
+          <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+            <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+              <img src="assets/img/modulos/proveedores/proveedor1.png" alt="" style="object-fit: contain;">
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+              <h3>Primer Paso</h3>
+              <p>Vamos a añadir a nuestros proveedores.</p>
+              <br />
+              <ul>
+                <li><i class="bi bi-arrow-right"></i><span>Entramos en el módulo de Compra.</span></li>
+                <li><i class="bi bi-arrow-right"></i><span>Vamos a Pedidos, Proveedores</span></li>
+                <li><i class="bi bi-arrow-right"></i><span>Le damos a Nuevo.</span></li>
+              </ul>
+            </div>
+          </div><!-- Features Item -->
+
+          <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+            <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+              <img src="assets/img/modulos/proveedores/proveedor2.png" alt="" style="object-fit:contain;">
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+              <h3>Segundo Paso</h3>
+              <p>Creamos un proveedor.</p>
+              <br />
+              <ul>
+                <li><i class="bi bi-arrow-right"></i><span>Introducimos un nombre.</span></li>
+                <li><i class="bi bi-arrow-right"></i><span>Introducimos la dirección.</span></li>
+                <li><i class="bi bi-arrow-right"></i><span>Le ponemos una imagen.</span></li>
+                <li><i class="bi bi-arrow-right"></i><span>Ponemos un correo electrónico.</span></li>
+                <br />
+                <li><i class="bi bi-gear"></i><span>Si ponemos un correo nuestro que funcione,
+                    los pedidos nos llegarán a ese correo.
+                  </span>
+                </li>
+                <li><i class="bi bi-gear"></i><span>Si introduces un nombre de un proveedor que
+                    ya exista, se rellenara automáticamente como en la imagen.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div><!-- Features Item -->
+        </section>
+
+        <!-- Solicitud de presupuesto -->
+        <section id="presupuesto" class="features section portfolio-details">
+
+          <!-- Section Title -->
+          <div style="text-align: start;" class="container section-title" data-aos="fade-up">
+            <h2>Solicitud de presupuesto</h2>
+            <p>Paso a paso para crear solicitudes de presupuesto</p>
+          </div><!-- End Section Title -->
+
+          <div class="container">
+
+            <div class="row gy-4 align-items-stretch justify-content-between features-item">
+              <div class="container row" data-aos="fade-up">
+                <div class="portfolio-details-slider swiper swiper2 init-swiper col-lg-6"
+                  style="max-width: 600px;height: 400px;">
+                  <script type="application/json" class="swiper-config">
+                  {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                  }
+                  </script>
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                      <img src="assets/img/modulos/presupuesto/ped1.png" alt=""
+                        style="object-fit: contain; width: 100%; height: 100%;">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/modulos/presupuesto/ped2.png" alt=""
+                        style="object-fit: contain; width: 100%; height: 100%;">
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
+                  <h3>Crear Solicitud de presupuesto</h3>
+                  <p>Desde el módulo compra entramos en la pestaña pedidos</p>
+                  <ul>
+                    <li><i class="bi bi-arrow-right"></i><span>Seleccionamos solicitudes de presupuesto.</span></li>
+                    <li><i class="bi bi-arrow-right"></i><span>Creamos una nueva solicitud desde el botón
+                        'Nuevo'.</span>
+                    </li>
+                    <li><i class="bi bi-arrow-right"></i><span>Rellenamos la información necesaria.</span></li>
+                    <br />
+                    <li><i class="bi bi-1-circle-fill"></i><span>Primera foto:Creación de presupuesto.</span></li>
+                    <li><i class="bi bi-2-circle-fill"></i><span>Segunda foto:Resultado de la creación de
+                        presupuesto.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section Title -->
+            <section id="pedido">
+              <div style="text-align: start; margin-top: 7%;" class="container section-title" data-aos="fade-up">
+                <h2>Pedidos de compra</h2>
+                <p>Paso a paso para crear pedidos de compra</p>
+              </div><!-- End Section Title -->
+              <div class="row gy-4 align-items-stretch justify-content-between features-item mt-3">
+                <div class="container row" data-aos="fade-up">
+                  <div class="portfolio-details-slider swiper swiper3 init-swiper col-lg-6"
+                    style="max-width: 600px;height: 500px;">
+                    <script type="application/json" class="swiper-config">
+                      {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      },
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                      }
+                    </script>
+                    <div class="swiper-wrapper align-items-center">
+                      <div class="swiper-slide">
+                        <img src="assets/img/modulos/pedidos_compra/pedComp1.0.png" alt=""
+                          style="object-fit: contain; width: 100%; height: 100%;">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/modulos/pedidos_compra/ped3.1.png" alt=""
+                          style="object-fit: contain; width: 100%; height: 100%;">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/modulos/pedidos_compra/pedComp.png" alt=""
+                          style="object-fit: contain; width: 100%; height: 100%;">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/modulos/pedidos_compra/ped4.png" alt=""
+                          style="object-fit: contain; width: 100%; height: 100%;">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/modulos/pedidos_compra/pedComp2.png" alt=""
+                          style="object-fit: contain; width: 100%; height: 100%;">
+                      </div>
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                  <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
+                    <h3>Crear y validar pedidos de compra</h3>
+                    <p>Los pedidos de compra se crean automáticamente después de crear un presupuesto.</p>
+                    <br />
+                    <ul>
+                      <li><i class="bi bi-arrow-right"></i><span>Desde la pestaña pedidos entramos en pedidos de
+                          compra.</span></li>
+                      <li><i class="bi bi-arrow-right"></i><span>Abrimos el pedido de compra que queramos validar y
+                          clicamos en recibir productos</span>
+                      </li>
+                      <li><i class="bi bi-arrow-right"></i><span>A continuación validamos la recepción del
+                          pedido</span>
+                      </li>
+                      <li><i class="bi bi-arrow-right"></i><span>Tras esto, clicamos en enviar pedido de compra por
+                          correo
+                          electrónico para generar el pdf.</span></li>
+                      <li><i class="bi bi-arrow-right"></i><span>Para finalizar, se nos abrirá una ventana emergente
+                          que
+                          contiene el pdf (lo podremos descargar), pulsamos enviar.</span></li>
+                    </ul>
+
+                  </div>
+                  <!-- Features Item -->
+                  <div class="row">
+                    <div class="col-lg-6" style="margin-top: 70px;">
+                      <ul>
+                        <li><i class="bi bi-1-circle-fill"></i><span>Primera foto:Pestaña en la que se visualizan
+                            todos
+                            los pedidos de compra.</span></li>
+                        <li><i class="bi bi-2-circle-fill"></i><span>Segunda foto:Botón de recibir productos dentro de
+                            un
+                            pedido.</span></li>
+                        <li><i class="bi bi-3-circle-fill"></i><span>Tercera foto:Validación de un pedido de
+                            compra.</span></li>
+                        <li><i class="bi bi-4-circle-fill"></i><span>Cuarta foto:Pedido de compra ya validado.</span>
+                        </li>
+                        <li><i class="bi bi-5-circle-fill"></i><span>Quinta foto:Envío de pedido de compra por correo
+                            electrónico.</span></li>
+                      </ul>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                      <section id="service-details" class="service-details section">
+                        <div class="service-box">
+                          <h4>Resultado PDF generado</h4>
+                          <div class="download-catalog">
+                            <a href="./assets/pdfs/Pedido.compra-P00002.pdf" download><i
+                                class="bi bi-filetype-pdf"></i><span>Pedido de compra-P00002</span></a>
+                          </div>
+                        </div><!-- End Services List -->
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section><!-- / solicitud presupuesto -->
+      </div>
+    </section>
+    <!-- / MÓDULO COMPRA -herramienta visual e interactiva que permite a los usuarios obtener una visión general del rendimiento de las ventas y el estado de la operación en tiempo real. -->
+
+    <!--PRUEBA-->
+    <div class="container section-title" data-aos="fade-up" id="ptventa">
+      <h2>Punto de venta</h2>
+    </div>
+    <section id="ptventaProd" class="features section portfolio-details">
+      <div class="container">
+        <h2 class="post-modern-title"><a class="post-modern-title" href="#">Productos</a></h2>
+        <div class="row align-items-stretch justify-content-between features-item ">
+          <div class="container row" data-aos="fade-up">
+            <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
+              <p><strong>Sección clave que permite gestionar los artículos que se venden en el restaurante o en
+                  cualquier otro negocio que utilice el sistema de punto de venta.</strong></p>
+              <ul>
+                <li><i class="bi bi-1-circle-fill"></i><span>Primera foto:Pestaña 'Productos' en la que aparecerán todos
+                    los productos disponibles de nuestro comercio.</span></li>
+                <li><i class="bi bi-2-circle-fill"></i><span>Segunda foto:Recopilación de productos por defecto que
+                    contiene nuestro comercio el cual es un Restaurante.
+                    Si clicamos en uno de ellos pasaremos al modo edición de ese producto.</span></li>
+                <li><i class="bi bi-3-circle-fill"></i><span>Tercera foto:Modo edición del producto, en el cual podremos
+                    editar toda la información posible, como el nombre, la imagen, el precio...etc.</span></li>
+              </ul>
+            </div>
+            <div class="portfolio-details-slider swiper col-lg-6 swiper4" style="max-width: 600px;height: 500px;">
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  var swiper = new Swiper('.swiper4', {
+                    loop: true,
+                    speed: 600,
+                    autoplay: {
+                      delay: 5000
+                    },
+                    slidesPerView: 'auto',
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev'
+                    },
+                    pagination: {
+                      el: '.swiper-pagination',
+                      type: 'bullets',
+                      clickable: true
+                    }
+                  });
+                });
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura1.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/productosRest.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura2.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ptventaTab" class="features section portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div>
+            <hr />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="container" id="ptventaTab">
+        <h2 class="post-modern-title"><a class="post-modern-title" href="#">Tablero</a></h2>
+        <div class="row  align-items-stretch justify-content-between features-item">
+          <div class="container row" data-aos="fade-up">
+
+            <div class="col-lg-6 d-flex justify-content-center flex-column mt-4" data-aos="fade-up">
+              <p><strong>Herramienta visual e interactiva que permite a los usuarios obtener una visión general del
+                  rendimiento de las ventas y el estado de la operación en tiempo real.</strong></p>
+              <ul>
+                <li><i class="bi bi-1-circle-fill"></i><span>Primera foto:Pestaña tablero, el botón 'Abrir caja
+                    registradora' permite iniciar la sesión de caja.</span></li>
+                <li><i class="bi bi-2-circle-fill"></i><span>Segunda foto:Ventana emergente tras clicar en 'Abrir caja',
+                    habrá que ingresar el monto correspondiente y tras ingresarlo, se podrá confirmar la apertura de la
+                    caja, y podrás realizar pedidos y pagos durante la sesión de Punto de venta.</span></li>
+                <li><i class="bi bi-3-circle-fill"></i><span>Tercera foto:Tras abrir la caja registradora aparece un
+                    mapa de mesa. El mapa de mesas muestra una representación visual de las mesas del restaurante, las
+                    cuales pueden tener pedidos o no.
+                    -Si la mesa sale un pedido nos saldrá con un color de relleno en la interfaz.
+                  </span></li>
+                <li><i class="bi bi-4-circle-fill"></i><span>Cuarta foto:Si clicamos en alguna de estas mesas podemos
+                    iniciar un pedido en esa mesa.</span>
+                </li>
+                <li><i class="bi bi-5-circle-fill"></i><span>Quinta foto:Algunos de los productos a los que podremos
+                    optar en el pedido pueden llevar complementos adicionales. Tras efectuar completamente el pedido, si
+                    clicamos en Pago procederemos al pago del mismo.</span>
+                </li>
+                <li><i class="bi bi-6-circle-fill"></i><span>Sexta foto:Aparecen los distintos métodos de pago, pulsamos
+                    el deseado y validamos. Puntos a tener en cuenta antes de validar:
+                    <br />
+                    -En el caso que paguemos en efectivos, en caso de que el pago no sea exacto, introducimos la
+                    cantidad que vamos a recibir por parte del cliente y muestra el cambio que tendra que recibir.A
+                    continuación validamos.
+                    <br />
+                    -En caso de pago por tarjeta, clicamos directamente en validar.
+                  </span>
+                </li>
+                <li><i class="bi bi-7-circle-fill"></i><span>Séptima foto:Aparecen los distintos métodos de
+                    pago,pulsamos
+                    el deseado y validamos.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="portfolio-details-slider swiper col-lg-6 swiper5" style="max-width: 600px;height:500px;">
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  var swiper = new Swiper('.swiper5', {
+                    loop: true,
+                    speed: 600,
+                    autoplay: {
+                      delay: 5000
+                    },
+                    slidesPerView: 'auto',
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev'
+                    },
+                    pagination: {
+                      el: '.swiper-pagination',
+                      type: 'bullets',
+                      clickable: true
+                    }
+                  });
+                });
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura3.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura4.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura9.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura8.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura7.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura5.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/puntoventa/Captura6.png" alt=""
+                    style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!--/PRUEBA-->
+
+    <!-- AJUSTES -->
+    <section class="features section" id="ajustes">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Ajustes</h2>
+        <p>En este módulo, vamos a configurar el diseño de nuestros documentos.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+            <img src="assets/img/modulos/ajustes/ajustes1.png" alt="" style="object-fit: contain;">
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+            <h3>Primer Paso</h3>
+            <p>Buscamos la opción de gestionar diseño de documento.</p>
+            <br />
+            <ul>
+              <li><i class="bi bi-arrow-right"></i><span>Entramos en el módulo de ajustes.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Vamos a Opciones generales.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Buscamos el apartado de Compañías, Diseño de
+                  documento.</span>
+              </li>
+              <li><i class="bi bi-arrow-right" style="color: #017E84"></i><span style="color: #017E84">Configurar
+                  diseño
+                  de documento.</span></li>
+            </ul>
+          </div>
+        </div><!-- AJUSTES -->
+
+        <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+            <img src="assets/img/modulos/ajustes/ajustes2.png" alt="" style="object-fit: contain;">
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+            <h3>Segundo Paso</h3>
+            <p>Configuramos nuestro documento.</p>
+            <br />
+            <ul>
+              <li><i class="bi bi-arrow-right"></i><span>Escogemos el diseño del documento (Striped en nuestro
+                  caso)</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Escogemos el tipo de letra.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Configuramos el logotipo de la empresa.</span></li>
+              <li><i class="bi bi-arrow-right"></i><span>Añadimos la dirección, un lema y un pie de página.</span>
+              </li>
+              <li><i class="bi bi-arrow-right"></i><span>Dandole a confirmar, ya tendremos nuestros documentos
+                  configurados.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Section -->
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cuaderno.jpg" alt="">
+
+    </section><!-- /Call To Action Section -->
+    <!--video Odoo-->
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 pt-8">
+            <h2 class="display-6 text-center mb-6">
+              <span class="display-5 fondoRed">Mejora</span> la calidad de tu <span
+                class="display-5 fondoGreen">trabajo</span>
+            </h2>
+            <div class="mb-n5 text-center">
+              <video loop="loop" muted="muted" autoplay height=auto width="80%" controls>
+                <source src="https://download.odoocdn.com/videos/odoo_com/video_homepage.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Precios</h2>
+        <p>¡No estás <span style="font-size: 20px;" class="fondoRed">soñando</span>!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Una aplicación gratis</h3>
+              <div class="icon">
+                <i class="bi bi-bag-x-fill"></i>
+              </div>
+              <h4><sup>€</sup>0<span> / mes</span></h4>
+              <ul>
+                <li><i class="bi bi-backspace-reverse"></i> <span>Usuarios limitados</span></li>
+                <li><i class="bi bi-check"></i> <span><b>Una sola aplicación</b></span></li>
+                <li><i class="bi bi-check"></i> <span>Odoo Online</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Odoo Studio</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Multiempresa</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>API externa</span></li>
+              </ul>
+              <div class="text-center"><a href="https://www.odoo.com/es_ES/pricing" target="_blank"
+                  class="buy-btn">EMPIEZA AHORA</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4">
+            <div class="pricing-item featured">
+              <h3>Estándar</h3>
+              <div class="icon">
+                <i class="bi bi-bag-check"></i>
+              </div>
+
+              <h4><sup>€</sup>11,90<span> / por usuario al mes</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span><b>Todas las aplicaciones</b></span></li>
+                <li><i class="bi bi-check"></i> <span>Odoo Online</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Odoo Studio</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Multiempresa</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>API externa</span></li>
+              </ul>
+              <div class="text-center"><a href="https://www.odoo.com/es_ES/pricing" target="_blank"
+                  class="buy-btn">CÓMPRALO AHORA</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Personalizado</h3>
+              <div class="icon">
+                <i class="bi bi-person-fill-gear"></i>
+              </div>
+              <h4><sup>€</sup>17,90<span> / por usuario al mes</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span><b>Todas las aplicaciones</b></span></li>
+                <li><i class="bi bi-check"></i> <span>Odoo Online / Odoo.sh**</span></li>
+                <li><i class="bi bi-check"></i> <span>On-premise</span></li>
+                <li><i class="bi bi-check"></i> <span>Odoo Studio</span></li>
+                <li><i class="bi bi-check"></i> <span>Multiempresa</span></li>
+                <li><i class="bi bi-check"></i> <span>API externa</span></li>
+              </ul>
+              <div class="text-center"><a href="https://www.odoo.com/es_ES/pricing" target="_blank"
+                  class="buy-btn">CÓMPRALO AHORA</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"
+              style="background: linear-gradient(to right, gray, purple); -webkit-background-clip: text; background-clip: text; color: transparent;">Módulos
+              de Odoo</span>
+          </a>
+          <p>Odoo ofrece una amplia gama de módulos que optimizan la gestión de tu negocio, desde la contabilidad hasta
+            el inventario, mejorando la eficiencia y facilitando la toma de decisiones en una plataforma flexible y
+            fácil de usar.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="offset-lg-4 col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contacto</h4>
+          <p>C. Estrella Proción, 10</p>
+          <p>Andalucía, Sevilla 41015</p>
+          <p>España</p>
+          <p class="mt-4"><strong>Teléfono:</strong> <span>+34 955 62 38 16</span></p>
+          <p><strong>Web:</strong> <span>iesjulioverne.es</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Append</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/append-bootstrap-website-template/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

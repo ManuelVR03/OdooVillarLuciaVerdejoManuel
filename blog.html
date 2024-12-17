@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Daily</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="blog-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Daily</h1><span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="modulos.html"><span>Módulos</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="modulos.html#inventario"><span>Inventario</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="modulos.html#productos">Productos</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="modulos.html#empleados"><span>Empleados</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#emp">Empleados</a></li>
+                  <li><a href="#dep">Departamentos</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="modulos.html#compra"><span>Compra</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li class="dropdown" id="dropdownS"><a href="modulos.html#pedido"><span>Pedidos</span> <i
+                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="modulos.html#presupuesto">Solicitudes de presupuesto</a></li>
+                      <li><a href="modulos.html#pedido">Pedidos de compra</a></li>
+                      <li><a href="modulos.html#compra">Proveedores</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="modulos.html#productos">Productos</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="modulos.html#ptventa"><span>Punto de venta</span><i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="modulos.html#ptventaProd">Productos</a></li>
+                  <li><a href="modulos.html#ptventaTab">Tablero</a></li>
+                </ul>
+              </li>
+              <li><a href="modulos.html#ajustes">Ajustes</a></li>
+            </ul>
+          </li>
+          <li><a href="bootstrap.html">Bootstrap</a></li>
+          <li><a href="blog.html" class="active">Daily</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <img src="./assets/img/Logo.png" height="100px" width="100px" />
+    </div>
+  </header>
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-10">
+              <img src="./assets/img/Weekly_Workout.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li>Home</li>
+            <li><a href="#table" class="active">Daily</a></li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Daily Section -->
+
+    <section class="daily-section py-5" id="table">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Tarea</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Responsable</th>
+                    <th scope="col">Fase</th>
+                    <th scope="col">Fecha</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Elección de plantilla</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>Tras el evento</td>
+                    <td>22/11/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Elección de plantilla</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>23/11/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Creación de Odoo y funcionamiento del mismo</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>25/11/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Creación de Productos</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>26/11/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Creación de Empleados</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>27/11/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Creación de Departamentos</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>27/11/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Creación de Presupuestos</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>2/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Creación de Proveedores</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>2/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Creación de Logo</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>2/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Creación de Facturas</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>2/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Diseño del Home</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>Después del evento</td>
+                    <td>3/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Diseño de Módulos</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>Después del evento</td>
+                    <td>3/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Diseño de Daily</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>Después del evento</td>
+                    <td>3/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Integración de los Módulos en Bootstrap</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>Después del evento</td>
+                    <td>7/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Fin diseño de Home y Daily</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>7/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Fin diseño e integración de los Módulos</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>8/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Manual de Bootstrap</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>Después del evento</td>
+                    <td>8/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Añadir módulo de Punto de Venta</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>Después del evento</td>
+                    <td>10/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Fin añadir módulo de Punto de Venta</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>13/12/2024</td>
+                  </tr>
+                  <tr>
+                    <td>Manual de Bootstrap</td>
+                    <td><span class="badge bg-success">Completada</span></td>
+                    <td>Lucia, Manuel</td>
+                    <td>El mismo día</td>
+                    <td>15/12/2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"
+              style="background: linear-gradient(to right, #E84545, gray); -webkit-background-clip: text; background-clip: text; color: transparent;">Daily</span>
+          </a>
+          <p>Esta herramienta está diseñada para
+            mantenerte informado y optimizar la comunicación dentro del equipo, asegurando que todos estén enfocados
+            en los objetivos buscados.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contacto</h4>
+          <p>C. Estrella Proción, 10</p>
+          <p>Andalucía, Sevilla 41015</p>
+          <p>España</p>
+          <p class="mt-4"><strong>Teléfono:</strong> <span>+34 955 62 38 16</span></p>
+          <p><strong>Web:</strong> <span>iesjulioverne.es</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Append</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/append-bootstrap-website-template/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
